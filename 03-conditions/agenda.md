@@ -2,62 +2,38 @@
 Conditionals
 ~~~~~~~~~~~~~
 
-In Python the command:
+In python the command `if` creates a new program branch. If will check the condition, and if the condition is true will execute the block below it.
+
+We use `if` to conditionally run parts of the program.
+
+Let's continue to the starter code:
+
+1. In what line is the `if` command?
+
+2. Note the `:` at the end of that line. Everything between `if` and `:` is called the condition. What is the condition in the starter code?
+
+3. Note the line after the `if` starts indented. This is called a block and will continue until the indentation ends. How many lines are there in our block?
+
+4. Can you guess what the program does? Run it to verify
+
+5. Move line 16 to appear below the if block, without changing the functionality of the program
+
+6. Add inside the block a new line:
 
 ```
-from random import randint
+background(0,0,0)
 ```
 
-Allows us to use random numbers in our program (just like the line "from p5 import *" allowed us to draw shapes)
+What did it do? Can you see the flashing black background?
 
-After we write this line we can call "randint(a, b)" to get a random number in range [a, b].
+7. Move the new background line out of the block. What happened now? why?
 
-Our starter program will use this function to paint the background green or red:
+-----------------------
 
-1. It defines a global variable called "color"
+1. Modify the code so the rectangle will change direction when it reaches the end, going back to the other side
 
-2. In setup() we give it a random value between 0 and 10
+2. Add a new `y` variable and have the rectangle move in diagonal. When it hits a right or left wall change its horizontal direction; when it hits top or bottom wall change its vertical direction
 
-3. In draw() we check if the value is > 5 to know what color to use.
+----------------------------
 
-Look at the code in lines 14-17:
-
-1. The structure is called "if". We have the word if followed by a condition
-
-2. After an "if" statement the code will branch: either the first (then block) or second (else block) will happen according to the truthness of the condition.
-
-3. Else block is optional
-
-~~~~~~~
-Now You
-~~~~~~~
-
-1. Can you change the program so it is more likely to get green?
-
-2. More likely to get a red?
-
-3. What happens if we move the line "color = randint(0, 10)" to the draw() method? why?
-
-4. Can you make it flash slower?
-
-5. Python has a special condition syntax that can check if a value is in range:
-
-```
-if 0 <= color < 5:
-  pass
-```
-
-Meaning if color is larger or equal to zero AND smaller than 5. 
-
-Use this syntax and have the program show sometimes a blue background also.
-
-
-1. What happens if we remove line 7 ("global color") from setup function?
-
-2. In a previous lesson we created a rectangle that moves all the way to the end of the screen. Use "if" to have the rectangle move back when it reaches the end
-
-3. Use a random number to have the rectangle move at a random speed
-
-4. Write a new program that will draw 3 rectangles, having ONLY 1 red rectangle and the other two grey
-
-5. Draw two rectangles at two opposite sides of the screen and have them moving towards each other. Stop moving when they collide.
+1. Create a second rectangle and have both rectangles change directions when they collide
