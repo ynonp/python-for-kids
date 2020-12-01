@@ -1,7 +1,7 @@
 from p5 import *
 
 # הגדרת משתנים
-myFont = create_font("C:\\Windows\\Fonts\\Arial.ttf", 16)
+my_font = create_font("C:\\Windows\\Fonts\\Arial.ttf", 16)
 x = 3
 
 
@@ -12,7 +12,7 @@ def setup():
 
 # ציור (מחזורי)
 def draw():
-    global myFont, x
+    global my_font, x
 
     # הופכים את המחרוזת בשביל ימין לשמאל
     string = "שלום עולמי!" [::-1]
@@ -22,7 +22,7 @@ def draw():
     fill("blue")
 
     # בחירת גופן ומיקום
-    text_font(myFont, 48)
+    text_font(my_font, 48)
     text_align("CENTER")
 
     # כתיבה למסך
