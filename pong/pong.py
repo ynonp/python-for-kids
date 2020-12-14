@@ -3,7 +3,7 @@ from p5 import *
 left_bar_y = 0
 ball_x = 100
 ball_y = 100
-ball_dx = 2
+ball_dx = 4
 ball_dy = 2
 
 def setup():
@@ -15,9 +15,9 @@ def draw():
     background(150, 150, 150)
 
     if ball_x > 640:
-        ball_dx = -2
+        ball_dx = -4
     if ball_x < 0:
-        ball_dx = 2
+        ball_dx = 4
     if ball_y > 480:
         ball_dy = -2
     if ball_y < 0:
