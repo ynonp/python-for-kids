@@ -20,8 +20,6 @@ def draw():
     global x, y, target_x, target_y
 
     if mouse_is_pressed:
-#        x = random_uniform(SIZE)
-#        y = random_uniform(SIZE)
         x = 0
         y = 0
         target_x = mouse_x
