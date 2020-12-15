@@ -6,7 +6,8 @@
 
 3. Can you make the text bounce off the edges so that it is always visible?
 
-## buggy2/fixed2
+
+# buggy2/fixed2
 
 1. Fix (at least) 3 bugs in order for the program to display a rectangle with a changing RGB color palette
 
