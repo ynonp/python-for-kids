@@ -31,8 +31,9 @@
    How many guesses can Yotam guarantee to find a number between 1 and X?
 
 3. Python's dict() is the implementation of such a fast key access data structure.
-   Let's add elements by getting user input?
+   Let's write a program that supports listing the students in class, deleting a student,
+   adding a student, checking whether a student is in the class, etc.
 
 # Debugging Session
 
-1. zzzzzzzzzzz
+1. Use the debugger for the development of the program above.

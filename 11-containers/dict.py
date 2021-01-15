@@ -18,13 +18,17 @@ for item in kids.items():
 # kids['4'] = 'samy'
 
 # קבלת קלט מהמשתמש
-print("Enter a number please:")
-input = sys.stdin.read(1)[0]
+while True:
+    print("Enter a number please:")
+    input = sys.stdin.readline()[0]
 
-# חיפוש במילון והדפסת ערך בהתאם
-kid = kids.get(input)
-if kid is not None:
-    print(kid)
-else:
-    print("YotamkiPumpki")
+    # קלט שאנחנו לא רוצים להתמודד איתו
+    if (input == '\n'):
+        continue
 
+    # חיפוש במילון והדפסת ערך בהתאם
+    kid = kids.get(input)
+    if kid is not None:
+        print(kid)
+    else:
+        print("YotamkiPumpki")
