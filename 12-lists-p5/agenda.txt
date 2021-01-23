@@ -1,0 +1,17 @@
+# Lists
+
+1. What does the program do?
+
+2. How can you add another circle?
+
+3. Change each circle to have a different radius
+
+4. Make the circles move to all 4 directions
+
+5. Add gravity (changing the down speed every update)
+
+6. Create the initial list using a loop, creating 10 circles
+
+7. Paint each circle in a different color
+
+8. Go back to having 1 circle, but add another circle every time a user clicks on it
